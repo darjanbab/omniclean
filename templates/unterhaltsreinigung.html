@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css?v=32">
+    <link rel="stylesheet" href="static/css/slideshow.css?v=30">
+    <link rel="stylesheet" href="static/css/about_us.css?v=2">
+    <link rel="stylesheet" href="static/css/service.css?v=2">
+    <link rel="stylesheet" href="static/css/karriere.css?v=2">
+    <link rel="stylesheet" href="static/css/blog.css?v=4">
+    <link rel="stylesheet" href="static/css/anfrage.css?v=5">
+    <link rel="stylesheet" href="static/css/servicestyle.css?v=7">
+    <script src="static/js/javascript.js?v=32"></script>
+    <link rel="shortcut icon" href="static/img/omnilogo1.png" type="image/x-icon">
+    <title>OmniClean</title>
+</head>
+<body>
+    <div id="menue-open" class="slide_done">
+        
+        <nav>
+
+            <ul class = navigation>
+                <li onclick="scrollToSection3('/#about_us')">ÜBER UNS<hr></li>
+                <li onclick="scrollToSection3('/#service')">LEISTUNGEN<hr></li>
+                <li onclick="scrollToSection3('/#karriere')">KARRIERE<hr></li>
+                <li onclick="scrollToSection3('/#kontakt')">KONTAKT<hr class="hr-sub"></li>
+                
+                <!--li class="nav-subtitle">Blog</li-->
+                <li class="nav-subtitle" onclick="scrollToSection2('#footnote')">Impressum</li>
+                <li class="nav-subtitle" onclick="window.location.href ='datenschutz'">Datenschutz</li>
+                <li class="nav-subtitle" onclick="window.location.href ='haftungsausschluss'">Haftungsausschluss</li>
+                
+            </ul>
+
+        </nav>
+    </div>
+        
+    <div id="homepage">
+        
+        <div id="start" class="start">
+            <div class="fixed-bereich">
+                <!--img class="omni" src="static/img/omniclean.png" onclick="window.location.href ='index'"-->
+                <img class="image" id="menue" src="static/img/Icons/menu1.png" onclick="show()">
+                <img class="omni" src="static/img/omniclean.png" id="omni" src="static/img/omniclean.png" onclick="show_menu()">
+                <img class="image"  onclick="scrollToSection3('/#kontakt')" src="static/img/Icons/info2.png">
+            </div>  
+        </div>
+        <div id="start-copy" class="start">
+            <div class="fixed-bereich">
+                <!--img class="omni" src="static/img/omniclean.png" onclick="window.location.href ='index'"-->
+                <img class="image" id="image-close" src="static/img/Icons/menu1.png">
+                <img class="omni" id="omni-clone" src="static/img/omniclean.png">
+                <img class="image" src="static/img/Icons/info2.png">
+            </div>  
+        </div>
+        
+        <div class = "service_page">
+            <div class="homepage_headtitle">
+                <div class="title">UNTERHALTSREINIGUNG</div>
+                <hr>
+            </div>
+            <div class="service-wrapper">
+                <img class="image-service" src="static/img/bodenrein.jpg" alt="img1">
+            </div>
+            
+            
+        
+            <div class="service-text-div">
+                <p>
+                    Die Unterhaltsreinigung ist das größte Angebot, das wir anbieten und umfasst alle sanitären Einrichtugen, sowie Küchen und Fußböden eines Gebäudes. Für diese Leistung benötigen Sie also einen kompetenten und verlässlichen Ansprechpartner, der Ihnen stets zur Seite steht und offene Fragen zu jedem Zeitpunkt klärt. Selbstverständlich versorgen wir Sie auch mit allen nötigen sanitären Materialien, wie Toilettenpapier oder Müllsäcken. Dabei lassen wir keine Heizung, oder noch so verwinkelte Ecke, ungereinigt und arbeiten extrem präzise und effizient. Umfang und Frequenz der Reinigungsarbeiten legen Sie selbst fest. Hier können wir Ihnen individuell auf Sie zugeschnittene Angebote zukommen lassen. Um die Hygiene Ihrer Einrichtung müssen Sie sich danach keine Sorgen mehr machen.    
+                </p> 
+            </div>
+            
+            
+        </div>
+
+    
+        <div id="footnote">
+            <div>
+                <div id="impressum">IMPRESSUM</div>
+                <div class = "impressum">
+                    <a><p onclick="window.location.href ='datenschutz'">Datenschutz</p></a>
+                    <a ><p onclick="window.location.href ='haftungsausschluss'">Haftungsausschluss</p></a>
+                    <a><p onclick="scrollToSection3('/#karriere')">Jobchancen</p></a>
+                    <div class="social-bereich">
+                        <a href="http://instagram.com"><img class="social-media" src="static/img/Icons/insta1.png"></a>
+                        <a href="http://facebook.com"><img class="social-media-f" src="static/img/Icons/faceboo1.png"></a>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div onclick="scrollToSection3('/#anfrage')" id="phone_kontakt" class="hide">
+            <div class="image-bereich">
+                <img class="image" src="static/img/Icons/chat4.png">
+            </div>
+        </div>
+        <div class="phone_kontakt">
+            <div class="image-bereich">
+                <img class="image" src="static/img/Icons/menu.png">
+            </div>
+        </div>
+    </div>
+            
+  
+    
+    
+</body>
+</html>
+

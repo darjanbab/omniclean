@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css?v=31">
+    <link rel="stylesheet" href="static/css/slideshow.css?v=29">
+    <link rel="stylesheet" href="static/css/about_us.css?v=1">
+    <link rel="stylesheet" href="static/css/service.css?v=1">
+    <link rel="stylesheet" href="static/css/karriere.css?v=6">
+    <link rel="stylesheet" href="static/css/blog.css?v=3">
+    <link rel="stylesheet" href="static/css/anfrage.css?v=3">
+    <link rel="stylesheet" href="static/css/servicestyle.css?v=2">
+    <script src="static/js/javascript.js?v=34"></script>
+    <link rel="shortcut icon" href="static/img/omnilogo1.png" type="image/x-icon">
+    <title>OmniClean</title>
+</head>
+<body>
+    
+    <div id="menue-open" class="slide_done">
+        
+        <nav>
+
+            <ul class = navigation>
+                <li onclick="scrollToSection2('#about_us')">ÜBER UNS<hr></li>
+                <li onclick="scrollToSection2('#service')">LEISTUNGEN<hr></li>
+                <li onclick="scrollToSection2('#karriere')">KARRIERE<hr></li>
+                <li onclick="scrollToSection2('#kontakt')">KONTAKT<hr class="hr-sub"></li>
+                
+                <!--li class="nav-subtitle">Blog</li-->
+                <li class="nav-subtitle" onclick="scrollToSection2('#footnote')">Impressum</li>
+                <li class="nav-subtitle" onclick="window.location.href ='datenschutz'">Datenschutz</li>
+                <li class="nav-subtitle" onclick="window.location.href ='haftungsausschluss'">Haftungsausschluss</li>
+                
+            </ul>
+
+        </nav>
+    </div>
+        
+    <div id="homepage">
+        
+        <div id="start" class="start">
+            <div class="fixed-bereich">
+                <!--img class="omni" src="static/img/omniclean.png" onclick="window.location.href ='index'"-->
+                <img class="image" id="menue" src="static/img/Icons/menu1.png" onclick="show()">
+                <img class="omni" src="static/img/omniclean.png" id="omni" src="static/img/omniclean.png" onclick="show_menu()">
+                <img class="image"  onclick="scrollToSection1('#kontakt')" src="static/img/Icons/info2.png">
+            </div>  
+        </div>
+        <div id="start-copy" class="start">
+            <div class="fixed-bereich">
+                <!--img class="omni" src="static/img/omniclean.png" onclick="window.location.href ='index'"-->
+                <img class="image" id="image-close" src="static/img/Icons/menu1.png">
+                <img class="omni" id="omni-clone" src="static/img/omniclean.png">
+                <img class="image" src="static/img/Icons/info2.png">
+            </div>  
+        </div>
+
+        <div id="slideshow">
+
+            <div class="image-bereich">
+                <input type="radio" name="slide" id="img1" checked>
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+                <!--input type="radio" name="slide" id="img5"-->
+
+                <div class="slide active">
+                    <img class="image" src="static/img/Slider/team.jpg" alt="img1">
+                    <div class="inside">
+                        <p class="text-overlay">HAUSBETREUUNG UND REINIGUNG</p>
+                        <div class="button" onclick="scrollToSection1('#anfrage')">ANFRAGE</div>
+                        <div class="dots">
+                            <label for="img1" class="active"></label>
+                            <label for="img2"></label>
+                            <label for="img3"></label>
+                            <label for="img4"></label>
+                            <!--label for="img5"></label-->
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="slide">
+                    <img class="image" src="static/img/Slider/slide3.jpg" alt="img2">
+                    <div class="inside">
+                        <p class="text-overlay">IHRE ZUVERLÄSSIGEN PARTNER</p>
+                        <div class="button" onclick="scrollToSection1('#about_us')">ÜBER UNS</div>
+                        <div class="dots">
+                            <label for="img1"></label>
+                            <label for="img2" class="active"></label>
+                            <label for="img3"></label>
+                            <label for="img4"></label>
+                            <!--label for="img5"></label-->
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="slide">
+                    <img class="image" src="static/img/Slider/bauendreinigung.jpg" alt="img3">
+                    <div class="inside">
+                        <p class="text-overlay">ALL-IN-ONE REINIGUNGSSERVICE</p>
+                        <div class="button" onclick="scrollToSection1('#service')">LEISTUNGEN</div>
+                        <div class="dots">
+                            <label for="img1"></label>
+                            <label for="img2"></label>
+                            <label for="img3" class="active"></label>
+                            <label for="img4"></label>
+                            <!--label for="img5"></label-->
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="slide">
+                    <img class="image" src="static/img/Slider/reinigungneu.jpg" alt="img4">
+                    <div class="inside">
+                        <p class="text-overlay">WERDE TEIL DES TEAMS</p>
+                        <div class="button" onclick="scrollToSection1('#karriere')">BEWERBEN</div>
+                        <div class="dots">
+                            <label for="img1"></label>
+                            <label for="img2"></label>
+                            <label for="img3"></label>
+                            <label for="img4" class="active"></label>
+                            <!--label for="img5"></label-->
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--div class="slide">
+                    <img class="image" src="static/img/blog.jpg" alt="img5">
+                    <div class="inside">
+                        <p class="text-overlay">LESEN SIE UNSEREN BLOG</p>
+                        <div class="button" onclick="scrollToSection1('#blog')">BLOG</div>
+                        <div class="dots">
+                            <label for="img1"></label>
+                            <label for="img2"></label>
+                            <label for="img3"></label>
+                            <label for="img4"></label>
+                            <label for="img5" class="active"></label>
+                        </div>
+                    </div>
+                    
+                </div-->
+            </div>  
+        </div>
+        <div id = "about_us">
+            <div class="homepage_headtitle">
+                <div class="title">ÜBER UNS</div>
+                <hr>
+            </div>
+            <div class="flex-container">
+
+            
+                <div class="container-box">
+                    <img class="image" src="static/img/About/check.png">
+                    <p class="description-title">GRÜNDLICHKEIT</p>
+                    <p class="description-text">Bei jedem Projekt achten wir auf eine besonders intensive und gründliche Reinigung</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/About/green-dot.png">
+                    <p class="description-title">FLEXIBILITÄT</p>
+                    <p class="description-text">Durch unser professionelles Personal können wir uns auf jede Situation optimal einstellen.</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/About/insignia.png">
+                    <p class="description-title">ZUVERLÄSSIGKEIT</p>
+                    <p class="description-text">Jeder Auftrag wird gewissenhaft, sorgfältig und pünktlich abgeschlossen. </p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/About/experience.png">
+                    <p class="description-title">KOMPETENZ</p>
+                    <p class="description-text">Unser geschultes Personal überzeugt mit jahrelanger Erfahrung in jeder Hinsicht. </p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/About/light-bulb.png">
+                    <p class="description-title">UMWELTFREUNDLICH</p>
+                    <p class="description-text">Unsere Methoden sind darauf ausgelegt, den ökologischen Fußabdruck minimal zu halten.</p>
+                </div>
+            </div>
+        </div>
+        <div id = "service">
+            <div class="homepage_headtitle">
+                <div class="title">UNSER SERVICE</div>
+                <hr>
+            </div>
+            <div class="flex-container">
+
+            
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/vakuum.png">
+                    <p class="description-title service-margin">GRUND - REINIGUNG</p>
+                    <p class="service-button" onclick="window.location.href ='grundreinigung'">ERFAHRE MEHR</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/architect.png">
+                    <p class="description-title service-margin">BAUEND - REINIGUNG</p>
+                    <p class="service-button" onclick="window.location.href ='bauendreinigung'">ERFAHRE MEHR</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/mop.png">
+                    <p class="description-title service-margin">UNTERHALTS - REINIGUNG</p>
+                    <p class="service-button" onclick="window.location.href ='unterhaltsreinigung'">ERFAHRE MEHR</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/rasenmaher.png">
+                    <p class="description-title service-margin">GARTENPFLEGE</p>
+                    <p class="service-button" onclick="window.location.href ='gartenpflege'">ERFAHRE MEHR</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/shovel.png">
+                    <p class="description-title service-margin">WINTERDIENST</p>
+                    <p class="service-button" onclick="window.location.href ='winterdienst'">ERFAHRE MEHR</p>
+                </div>
+                <div class="container-box">
+                    <img class="image" src="static/img/Services/fenster-putzen.png">
+                    <p class="description-title service-margin">GLAS -/ RAHMENREINIGUNG</p>
+                    <p class="service-button" onclick="window.location.href ='glasreinigung'">ERFAHRE MEHR</p>
+                </div>
+            </div>
+        </div>
+        <div id = "karriere">
+            <div class="homepage_headtitle">
+                <div class="title">KARRIERE</div>
+                <hr>
+                <div class="subtitle">WIR SUCHEN DICH</div>
+                <img class="image-job" src="static/img/Icons/job.png">
+            </div>
+            <div class="scroll_wrapper">
+
+            
+                <div class="scroll_container">
+                    <div class="scroll_entry">
+                        
+                        <img class="image-karriere" src="static/img/Icons/reinigung.png">
+                        <div class ="scroll_title">REINIGUNGSKRAFT <br>m/w/d</div>
+                        <div class ="scroll_date">
+                            <p class="karriere-info">11.4.2023</p>
+                            <div class="scroll_hour">
+                                <img class="image-karriere-date" src="static/img/Icons/user.png">
+                                <p class="karriere-info">Vollzeit</p>
+                            </div>
+
+                        </div>
+                        <div class="scroll-button" onclick="scrollToSection5('REINIGUNGSKRAFT m/w/d in Klagenfurt am Wörthersee\nFüllen Sie dieses Formular aus und drücken Sie auf Senden.\nWir melden uns telefonisch bei Ihnen.')">BEWERBEN</div>
+                    </div>
+                    <div class="scroll_entry">
+                        
+                        <img class="image-karriere" src="static/img/Icons/reinigung.png">
+                        <div class ="scroll_title">PUTZKRAFT <br>m/w/d</div>
+                        <div class ="scroll_date">
+                            <p class="karriere-info">11.4.2023</p>
+                            <div class="scroll_hour">
+                                <img class="image-karriere-date" src="static/img/Icons/user.png">
+                                <p class="karriere-info">Vollzeit</p>
+                            </div>
+
+                        </div>
+                        <div class="scroll-button" onclick="scrollToSection5('REINIGUNGSKRAFT m/w/d in Klagenfurt am Wörthersee\nFüllen Sie dieses Formular aus und drücken Sie auf Senden.\nWir melden uns telefonisch bei Ihnen.')">BEWERBEN</div>
+                    </div>
+                    <div class="scroll_entry">
+                        
+                        <img class="image-karriere" src="static/img/Icons/reinigung.png">
+                        <div class ="scroll_title">REINIGUNGSKRAFT <br>m/w/d</div>
+                        <div class ="scroll_date">
+                            <p class="karriere-info">11.4.2023</p>
+                            <div class="scroll_hour">
+                                <img class="image-karriere-date" src="static/img/Icons/user.png">
+                                <p class="karriere-info">Vollzeit</p>
+                            </div>
+                        </div>
+                        <div class="scroll-button" onclick="scrollToSection5('REINIGUNGSKRAFT m/w/d in Klagenfurt am Wörthersee\nFüllen Sie dieses Formular aus und drücken Sie auf Senden.\nWir melden uns telefonisch bei Ihnen.')">BEWERBEN</div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!--div id = "blog">
+                <div class="homepage_headtitle">
+                    <div class="title">BLOG</div>
+                    <hr>
+                    <div class="subtitle">LESE UNSEREN BLOG</div>
+                </div>
+                <div class="scroll_wrapper">
+    
+                
+                    <div class="scroll_container">
+                        <div class="scroll_entry">
+                            
+                            <img class="image" src="static/img/Blog/blog.jpg">
+                            <div class ="scroll_title">10 Tipps zum saubereren Haushalt</div>
+                            <div class="scroll-button">ZUM BLOG</div>
+                            
+                        </div>
+                        <div class="scroll_entry">
+                            
+                            <img class="image" src="static/img/blog.jpg">
+                            <div class ="scroll_title">10 Tipps zum saubereren Haushalt</div>
+                            <div class="scroll-button">ZUM BLOG</div>
+                            
+                        </div>
+                        <div class="scroll_entry">
+                            
+                            <img class="image" src="static/img/business.jpg">
+                            <div class ="scroll_title">10 Tipps zum saubereren Haushalt</div>
+                            <div class="scroll-button">ZUM BLOG</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div-->
+            <div id = "anfrage">
+                <div class="homepage_headtitle">
+                    <div class="title">ANFRAGE</div>
+                    <hr>
+                </div>
+                <div class="formular" id="formular">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <input class="input" type="text" name="vorname" placeholder="Vorname*" required>
+                        <input class="input" type="text" name="nachname" placeholder="Nachname*" required>
+                        <input class="input" type="email" name="email" placeholder="Email*" required>
+                        <input class="input" type="tel" name="tel" placeholder="Telefonnummer">
+                        <input class="input" type="text" name="firma" placeholder="Firma"><br>
+                        <textarea class="input-extend" name="message" id="anfrageboard" placeholder="Anfrage"></textarea>
+                        
+                        <input class="formular-button" type="submit" value="SENDEN">
+                    </form>
+                    
+                </div>
+            </div>
+            <div id = "kontakt">
+                <div class="homepage_headtitle">
+                    <div class="title">KONTAKT</div>
+                    <hr>
+                </div>
+                <div class="kontakt-wrapper">
+                    <div class="kontakt-box">
+                        <div class="box colored">
+                            <div class="box-image-bereich">
+                                <img class="image" src="static/img/Icons/ema.png">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div><p>office@</p>
+                            <p>omniclean.at</p></div>
+                        </div>
+                        <div class="box">
+                           
+                            <div> <p>+43 660 1234567</p></div>
+                        </div>
+                        <div class="box colored">
+                            <div class="box-image-bereich">
+                                <img class="image" src="static/img/Icons/pho.png">
+                            </div>
+                        </div>
+                        <div class="box colored">
+                            <div class="box-image-bereich">
+                                <img class="image" src="static/img/Icons/loca.png">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <iframe id = "map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5480.786004298996!2d14.3226079697754!3d46.61899749999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477074aed190e82b%3A0xa55dab232d88cba0!2sFischl!5e0!3m2!1sde!2sat!4v1680606467870!5m2!1sde!2sat" width="2000" height="2000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div id="footnote">
+                    <div>
+                        <div id="impressum">IMPRESSUM</div>
+                        <div class = "impressum">
+                            <a><p onclick="window.location.href ='datenschutz'">Datenschutz</p></a>
+                            <a ><p onclick="window.location.href ='haftungsausschluss'">Haftungsausschluss</p></a>
+                            <a><p onclick="scrollToSection1('#karriere')">Jobchancen</p></a>
+                            <div class="social-bereich">
+                                <a href="http://instagram.com"><img class="social-media" src="static/img/Icons/insta1.png"></a>
+                                <a href="http://facebook.com"><img class="social-media-f" src="static/img/Icons/faceboo1.png"></a>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div onclick="scrollToSection1('#anfrage')" id="phone_kontakt" class="hide">
+                    <div class="image-bereich">
+                        <img class="image" src="static/img/Icons/chat4.png">
+                    </div>
+                </div>
+                <div class="phone_kontakt">
+                    <div class="image-bereich">
+                        <img class="image" src="static/img/Icons/menu.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
